@@ -103,12 +103,12 @@ type RespOrderGet struct {
 				MerchantNotes string `json:"merchant_notes"`
 			} `json:"ext_info"`
 			CommissionInfos []struct {
-				SkuID    int    `json:"sku_id"`
-				Nickname string `json:"nickname"`
-				Type     int    `json:"type"`
-				Status   int    `json:"status"`
-				Amount   int    `json:"amount"`
-				FinderId string `json:"finder_id"`
+				SkuID    interface{} `json:"sku_id"`
+				Nickname string      `json:"nickname"`
+				Type     int         `json:"type"`
+				Status   int         `json:"status"`
+				Amount   int         `json:"amount"`
+				FinderId string      `json:"finder_id"`
 			} `json:"commission_infos"`
 			SharerInfo struct {
 				SharerOpenid  string `json:"sharer_openid"`
